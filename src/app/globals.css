@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #e0e2dc;
+  --size: 75px; /* size of the cut for divider */
+  --gap: 6px;
+}
+
+@theme {
+  --color-avena: #e0e2dc;
+  --color-camel: #c19d5a;
+  --color-rope: #8c5821;
 }
 
 @theme inline {
@@ -12,15 +26,92 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes openCard {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes closeCard {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 body {
-  background: var(--background);
+  background: var(--color-rope);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/assault.png");*/
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+
+.animate-infinite-scroll {
+  animation: infiniteScroll 125s linear 1s infinite;
+  -webkit-animation: infiniteScroll 125s linear 1s infinite;
+  -moz-animation: infiniteScroll 125s linear 1s infinite;
+  -o-animation: infiniteScroll 125s linear 1s infinite;
+}
+
+.carousel {
+  box-shadow: 8px 8px 7px rgb(34, 34, 34, 0.3);
+}
+
+/* Nav-bar pieces */
+.upper-bar {
+  mask: linear-gradient(var(--background) 0 0) top/100% calc(100% - var(--size))
+      no-repeat,
+    radial-gradient(farthest-side, #000 98%, #0000) bottom/calc(2 * var(--size))
+      calc(2 * var(--size)) no-repeat;
+}
+
+.middle-bar {
+  mask: radial-gradient(
+    calc(var(--gap) + var(--size)) at 50% calc(-1 * var(--gap)),
+    #0000 98%,
+    #000
+  );
+  margin-top: calc(var(--gap) - var(--size) + 2px);
+}
+
+.bottom-bar {
+  box-shadow: 0px 4px 7px rgb(34, 34, 34, 0.3);
+}
+
+.borders {
+  border: 6px solid var(--color-rope);
+}
+
+.filter-avena {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(63%) saturate(71%)
+    hue-rotate(19deg) brightness(92%) contrast(91%);
+}
+
+.filter-brown {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(46%) saturate(1514%)
+    hue-rotate(350deg) brightness(96%) contrast(105%);
 }
