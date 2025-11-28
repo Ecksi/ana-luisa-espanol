@@ -35,10 +35,10 @@ import describe007 from "../../public/images/exam/describe-7.png";
 
 import comic001 from "../../public/images/exam/comic-1.jpg";
 import comic002 from "../../public/images/exam/comic-2.jpg";
-import comic003 from "../../public/images/exam/comic-3.jpg";
+// import comic003 from "../../public/images/exam/comic-3.jpg";
 import comic003b from "../../public/images/exam/comic-3b.jpg";
 import comic004b from "../../public/images/exam/comic-4b.jpg";
-import comic004 from "../../public/images/exam/comic-4.jpg";
+// import comic004 from "../../public/images/exam/comic-4.jpg";
 import comic005 from "../../public/images/exam/comic-5.jpg";
 
 // import logo from "../../public/images/logo.png";
