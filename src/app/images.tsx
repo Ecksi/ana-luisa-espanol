@@ -51,6 +51,8 @@ import EcuaRight from "../../public/images/e-right.png";
 import EcuaCenter from "../../public/images/e-center.png";
 import EcuaAll from "../../public/images/e-all.png";
 
+import logo from "../../public/images/logo.png";
+
 import email from "../../public/images/socials/email.svg";
 import facebook from "../../public/images/socials/facebook.svg";
 import location from "../../public/images/socials/location.svg";
@@ -329,6 +331,11 @@ export const ecuaPeople = [
   { src: EcuaCenter, alt: "Ecuadorians" },
   { src: EcuaAll, alt: "Ecuadorians" },
 ];
+
+export const logoInfo = {
+  src: logo,
+  alt: "Ana Luisa Logo",
+};
 
 export const socials = [
   {

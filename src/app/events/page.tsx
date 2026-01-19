@@ -55,7 +55,7 @@ export default function Events() {
           className="rounded-sm"
           height={100}
         />
-        <h2 className="mx-8 text-amber-950 text-2xl">Events</h2>
+        <h2 className="mx-8 text-2xl">Events</h2>
         <Image
           src={ecuaPeople[2].src}
           alt={ecuaPeople[2].alt}

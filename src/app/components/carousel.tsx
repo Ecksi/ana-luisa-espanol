@@ -11,6 +11,8 @@ export default function Carousel() {
               src={img.src}
               alt={img.alt}
               priority={true}
+              width={192}
+              height={128}
               className="carousel h-32 w-48 rounded-sm"
             />
           </li>
@@ -25,6 +27,8 @@ export default function Carousel() {
             <Image
               src={img.src}
               alt={img.alt}
+              width={192}
+              height={128}
               className="carousel h-32 w-48 rounded-sm"
             />
           </li>

@@ -9,7 +9,7 @@ export default function Contact() {
     alt: string
   ): React.ReactElement => (
     <a className="" href={href} target="_blank" rel="noopener noreferrer">
-      <div className="flex items-center mb-6 text-amber-950">
+      <div className="flex items-center mb-6">
         <Image
           className="filter-brown"
           src={img}
@@ -17,20 +17,20 @@ export default function Contact() {
           width={30}
           height={30}
         />
-        {dotSpacing}
+        {dot}
         <span className="w-18 text-center">{alt}</span>
-        {dotSpacing}
+        {dot}
       </div>
     </a>
   );
 
-  const dotSpacing: React.ReactElement = (
+  const dot: React.ReactElement = (
     <div className="flex items-center px-4">&#x2022;</div>
   );
 
   return (
     <Card>
-      <div className="flex flex-col text-amber-950 ">
+      <div className="flex flex-col">
         <h2 className="text-2xl text-center">Contact Me</h2>
         <span className="mt-4 mb-8 text-center font-bold">
           I can be reached via FaceBook, WhatsApp, or Email messages.

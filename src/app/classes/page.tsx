@@ -55,7 +55,7 @@ export default function Classes() {
           className="rounded-sm"
           height={100}
         />
-        <h2 className="mx-8 text-amber-950 text-2xl">
+        <h2 className="mx-8 text-2xl">
           Spanish
           <br />
           Classes

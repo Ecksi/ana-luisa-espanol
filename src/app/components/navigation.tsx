@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { svgs } from "../images";
+import { logoInfo, svgs } from "../images";
 
 export default function Navigation() {
   return (
@@ -15,13 +15,14 @@ export default function Navigation() {
         <div>
           <Link href="/">
             <Image
-              alt="Ana Luisa Spanish Classes Logo"
-              src="https://analuisaspanishclasses.com/static/ana-luisa-logo-cbb72118c9280721d191412c6eda80d5.png"
+              alt={logoInfo.alt}
+              src={logoInfo.src}
               style={{
                 margin: "12px 0 0 12px",
                 height: "125px",
                 width: "125px",
               }}
+              // width={150}
             />
           </Link>
         </div>

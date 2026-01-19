@@ -7,12 +7,12 @@ export default function Home() {
     <CardWithButton buttonOne={svgs.examAlt} buttonTwo={svgs.registerAlt}>
       <div className="flex justify-center items-center space-x-3">
         <Image src={flags[0].src} alt={flags[0].alt} className="rounded-sm" />
-        <h2 className="mx-8 text-amber-950 text-2xl">
+        <h2 className="mx-8 text-2xl">
           Bienvenidos to Ana Luisa Spanish Classes
         </h2>
         <Image src={flags[1].src} alt={flags[1].alt} className="rounded-sm" />
       </div>
-      <div className="mt-8 text-amber-950 font-bold">
+      <div className="mt-8 font-bold">
         <p className="flex flex-col gap-1">
           <span className="pb-4">
             Welcome to Ana Luisa Spanish classes. I have been teaching students

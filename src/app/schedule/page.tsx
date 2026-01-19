@@ -42,7 +42,7 @@ export default function Schedule() {
   return (
     <>
       <Card>
-        <h2 className="text-amber-950 font-bold text-2xl text-center">
+        <h2 className="font-bold text-2xl text-center">
           Schedule for: January 5th - February 13th
         </h2>
       </Card>
